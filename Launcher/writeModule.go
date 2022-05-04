@@ -24,7 +24,7 @@ func UpdateToml(deps []string) {
 	//thisModulePath, _ := filepath.Abs(genArgs.outputPath)
 	//goPath := os.Getenv("GOPATH") + "/src/"
 	//thisModulePath = strings.Replace(thisModulePath, goPath, "", 1)
-	thisModulePath := "github.com/hexya-erp/OTH/Launcher/HexyaFiles/module"
+	thisModulePath := "github.com/erlangs/OTH/Launcher/HexyaFiles/module"
 	deps = append(deps, thisModulePath)
 	content = strings.Replace(content, "$$MODULEPATH$$", EncodeDeps(deps), -1)
 	rayUtils.WriteFileContent("HexyaFiles/hexya.toml", content)

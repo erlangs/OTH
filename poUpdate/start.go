@@ -9,7 +9,7 @@ import (
 
 	"sort"
 
-	"github.com/hexya-erp/hexya/src/tools/po"
+	"github.com/erlangs/okoo/src/tools/po"
 	"github.com/rayman520/GoRayUtils"
 )
 

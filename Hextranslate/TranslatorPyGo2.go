@@ -13,8 +13,8 @@ import (
 	"strings"
 	"unicode"
 
+	"github.com/erlangs/okoo/src/models"
 	"github.com/golang-collections/collections/stack"
-	"github.com/hexya-erp/hexya/src/models"
 
 	"github.com/davecgh/go-spew/spew"
 )
@@ -865,12 +865,12 @@ func translatePyFile(pyFile map[string]interface{}) []byte {
 	import (
 		"net/http"
 
-		"github.com/hexya-erp/hexya/src/controllers"
-		"github.com/hexya-erp/hexya/src/models"
-		"github.com/hexya-erp/hexya/src/models/types"
-		"github.com/hexya-erp/hexya/src/models/types/dates"
-		"github.com/hexya-erp/pool/h"
-		"github.com/hexya-erp/pool/q"
+		"github.com/erlangs/okoo/src/controllers"
+		"github.com/erlangs/okoo/src/models"
+		"github.com/erlangs/okoo/src/models/types"
+		"github.com/erlangs/okoo/src/models/types/dates"
+		"github.com/erlangs/pool/h"
+		"github.com/erlangs/pool/q"
 	)
 	`))
 	for _, n := range Sl(pyFile["body"]) {

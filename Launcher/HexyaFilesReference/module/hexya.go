@@ -1,7 +1,7 @@
 package translator
 
 import (
-	"github.com/hexya-erp/hexya/src/server"
+	"github.com/erlangs/okoo/src/server"
 )
 
 const MODULE_NAME string = "translator"

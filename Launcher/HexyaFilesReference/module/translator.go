@@ -3,12 +3,12 @@ package translator
 import (
 	"path/filepath"
 
-	"github.com/hexya-erp/OTH/Hextranslate"
-	"github.com/hexya-erp/hexya/src/models"
-	"github.com/hexya-erp/hexya/src/models/fields"
-	"github.com/hexya-erp/hexya/src/models/types"
-	"github.com/hexya-erp/pool/h"
-	"github.com/hexya-erp/pool/m"
+	"github.com/erlangs/OTH/Hextranslate"
+	"github.com/erlangs/okoo/src/models"
+	"github.com/erlangs/okoo/src/models/fields"
+	"github.com/erlangs/okoo/src/models/types"
+	"github.com/erlangs/pool/h"
+	"github.com/erlangs/pool/m"
 	"github.com/rayman520/GoRayUtils"
 )
 

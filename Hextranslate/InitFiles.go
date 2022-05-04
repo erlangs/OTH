@@ -12,7 +12,7 @@ func GetHexyaFileBase() string {
 		"package $MODNAME$												\n" +
 		"																\n" +
 		"import (														\n" +
-		"	\"github.com/hexya-addons/web/controllers\"			\n" +
+		"	\"github.com/erlangs/hexya-web/controllers\"			\n" +
 		"	$MODULELIST$												\n" +
 		")																\n" +
 		"																\n" +
@@ -30,13 +30,13 @@ func GetHexyaFileBase() string {
 
 func GetHexyaModuleList() string {
 	return "" +
-		"\"github.com/hexya-erp/hexya/src/server\"\n"
+		"\"github.com/erlangs/okoo/src/server\"\n"
 }
 
 func GetTomlFileBase() string {
 	return `
 Modules = [
-    "github.com/hexya-addons/web"$$MODULEPATH$$
+    "github.com/erlangs/hexya-web"$$MODULEPATH$$
 ]
 LogStdout = true
 #LogFile = ""
@@ -64,7 +64,7 @@ func GetTomlModuleList() string {
 	// thisModulePath = strings.Replace(thisModulePath, goPath, "", 1)
 	thisModulePath := "../HexyaFiles/modulelu"
 	return "\"" + thisModulePath + "\",\n" +
-		"\t\"github.com/hexya-addons/web\""
+		"\t\"github.com/erlangs/hexya-web\""
 }
 
 func GetControllerAssetsList() string {

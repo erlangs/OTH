@@ -17,9 +17,9 @@ var logger rayUtils.Logger
 
 func GetKnownPathMap() map[string]string {
 	out := make(map[string]string)
-	out["base"] = "github.com/hexya-addons/base"
-	out["web"] = "github.com/hexya-addons/web"
-	out["webKanban"] = "github.com/hexya-addons/webKanban"
+	out["base"] = "github.com/erlangs/hexya-base"
+	out["web"] = "github.com/erlangs/hexya-web"
+	out["webKanban"] = "github.com/erlangs/hexya-webKanban"
 	// out["account"] = "github.com/hexya-addons/account"        			// duplicate heyxa_external_id constraint
 	// out["analytic"] = "github.com/hexya-addons/analytic"      			// duplicate heyxa_external_id constraint
 	out["decimalPrecision"] = "github.com/hexya-addons/decimalPrecision"
@@ -51,7 +51,7 @@ func HandleUnknDep() (f func(dep string) string) {
 				"\t\tplease specify for each one its hexya module path\n" +
 				"\t\tLeave empty for default hexya-addons folder\n" +
 				"\t\tType 'skip' to ignore thre requirement\n" +
-				"\t\tExemple: web -> github.com/hexya-addons/web\n\n")
+				"\t\tExemple: web -> github.com/erlangs/hexya-web\n\n")
 		}
 		logger.LogWarn("please specify hexya module path for:   %s", dep)
 		givenpath = ""
@@ -59,7 +59,7 @@ func HandleUnknDep() (f func(dep string) string) {
 		if len(givenpath) > 0 {
 			return givenpath
 		} else {
-			return "github.com/hexya-addons/" + dep
+			return "github.com/erlangs/hexya-" + dep
 		}
 	}
 	return f
@@ -121,7 +121,7 @@ func HandleDeps(dependencies []string) []string {
 
 func GenerateHexya() []string {
 	logger.LogInfo("Generating hexya")
-	cmdGen := exec.Command("hexya", "generate", "-o")
+	cmdGen := exec.Command("okoo", "generate", "-o")
 	HexFilesDir, _ := filepath.Abs("HexyaFiles")
 	cmdGen.Dir = HexFilesDir
 	stdoutLog, _ := rayUtils.ExecPrintCmd(cmdGen)
@@ -166,7 +166,7 @@ func Retry(deps, outDeps []string, args []string) (bool, []string, []string) {
 func StartHex() {
 	hexFileDir, _ := filepath.Abs("HexyaFiles")
 
-	cmd := exec.Command("hexya", "generate", "-o", ".")
+	cmd := exec.Command("okoo", "generate", "-o", ".")
 	cmd.Dir = hexFileDir
 	rayUtils.ExecPrintCmd(cmd)
 
@@ -178,11 +178,11 @@ func StartHex() {
 	cmd.Dir = hexFileDir
 	rayUtils.ExecPrintCmd(cmd)
 
-	cmd = exec.Command("hexya", "updatedb", "--db-name", "hexyaoth")
+	cmd = exec.Command("okoo", "updatedb", "--db-name", "hexyaoth")
 	cmd.Dir = hexFileDir
 	rayUtils.ExecPrintCmd(cmd)
 
-	cmd = exec.Command("hexya", "server", "-o", "--db-name", "hexyaoth")
+	cmd = exec.Command("okoo", "server", "-o", "--db-name", "hexyaoth")
 	cmd.Dir = hexFileDir
 	rayUtils.ExecPrintCmd(cmd)
 }

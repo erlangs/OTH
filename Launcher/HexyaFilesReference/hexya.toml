@@ -1,5 +1,5 @@
 Modules = [
-    "github.com/hexya-addons/web"$$MODULEPATH$$
+    "github.com/erlangs/hexya-web"$$MODULEPATH$$
 ]
 LogStdout = true
 #LogFile = ""

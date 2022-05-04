@@ -5,7 +5,7 @@ import (
 	"os"
 	"strconv"
 
-	"github.com/hexya-erp/pool/m"
+	"github.com/erlangs/pool/m"
 )
 
 type GenArgs struct {

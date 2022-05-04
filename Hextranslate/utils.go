@@ -11,7 +11,7 @@ import (
 	"strings"
 	"syscall"
 
-	"github.com/hexya-addons/web/odooproxy"
+	"github.com/erlangs/hexya-web/odooproxy"
 )
 
 func FatalError(str string, args ...interface{}) {
@@ -88,7 +88,7 @@ func InitSecurityGoFile(path string) {
 	if _, err := os.Stat(path); os.IsNotExist(err) {
 		CreateDir(filepath.Dir(path))
 		file, _ := os.Create(path)
-		file.WriteString("package " + genArgs.moduleName + "\n\nimport (\n\t\"github.com/hexya-addons/base\"\n\t\"github.com/hexya-erp/hexya/src/models/security\"\n\t\"github.com/hexya-erp/hexya/src/models/security\"\n\t\"github.com/hexya-erp/pool/h\"\n)\n\n//vars\nfunc init() {\n//group_init\n\n//rights\n}\n")
+		file.WriteString("package " + genArgs.moduleName + "\n\nimport (\n\t\"github.com/hexya-addons/base\"\n\t\"github.com/erlangs/okoo/src/models/security\"\n\t\"github.com/erlangs/okoo/src/models/security\"\n\t\"github.com/erlangs/pool/h\"\n)\n\n//vars\nfunc init() {\n//group_init\n\n//rights\n}\n")
 		file.Close()
 	}
 }

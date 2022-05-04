@@ -6,7 +6,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/hexya-addons/web/odooproxy"
+	"github.com/erlangs/hexya-web/odooproxy"
 )
 
 /* field funcs */

@@ -20,12 +20,12 @@ func RunTranslatedModule() {
 		HexFilesDir, _ = filepath.Abs("../..")
 		cmdGen.Dir = HexFilesDir
 		rayUtils.ExecPrintCmd(cmdGen)
-		cmdGen = exec.Command("hexya", "updatedb", "-o", "--db-name", "PostTranslate")
+		cmdGen = exec.Command("okoo", "updatedb", "-o", "--db-name", "PostTranslate")
 		HexFilesDir, _ = filepath.Abs("../..")
 		cmdGen.Dir = HexFilesDir
 		rayUtils.ExecPrintCmd(cmdGen)
 
-		cmdGen = exec.Command("hexya", "server", "-o", "--db-name", "PostTranslate")
+		cmdGen = exec.Command("okoo", "server", "-o", "--db-name", "PostTranslate")
 		HexFilesDir, _ = filepath.Abs("../..")
 		cmdGen.Dir = HexFilesDir
 		rayUtils.ExecPrintCmd(cmdGen)
@@ -41,7 +41,7 @@ func GenerateTranslatedModule() {
 		gopath := os.Getenv("GOPATH") + "/src/"
 		content = strings.Replace(content, "$$MODULEPATH$$", fmt.Sprintf(",\n\t\"%s\"", strings.Replace(genArgs.outputPath, gopath, "", -1)), -1)
 		rayUtils.WriteFileContent("../../hexya.toml", content)
-		cmdGen := exec.Command("hexya", "generate", "-o")
+		cmdGen := exec.Command("okoo", "generate", "-o")
 		HexFilesDir, _ := filepath.Abs("../..")
 		cmdGen.Dir = HexFilesDir
 		rayUtils.ExecPrintCmd(cmdGen)

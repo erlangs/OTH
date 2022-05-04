@@ -3,7 +3,7 @@ package Hextranslate
 import (
 	"os"
 
-	"github.com/hexya-erp/pool/m"
+	"github.com/erlangs/pool/m"
 )
 
 func Init(input m.TranslatorSet) {

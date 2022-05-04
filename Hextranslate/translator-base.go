@@ -11,7 +11,7 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/hexya-erp/hexya/src/tools/fileutils"
+	"github.com/erlangs/okoo/src/tools/fileutils"
 )
 
 func GetAllFiles(iPath string) *list.List {

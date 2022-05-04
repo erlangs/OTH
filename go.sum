@@ -32,11 +32,11 @@ github.com/dgrijalva/jwt-go v3.2.0+incompatible/go.mod h1:E3ru+11k8xSBh+hMPgOLZm
 github.com/dgryski/go-sip13 v0.0.0-20181026042036-e10d5fee7954/go.mod h1:vAd38F8PWV+bWy6jNmig1y/TA+kYO4g3RSRF0IAv0no=
 github.com/disintegration/imaging v1.6.0 h1:nVPXRUUQ36Z7MNf0O77UzgnOb1mkMMor7lmJMJXc/mA=
 github.com/disintegration/imaging v1.6.0/go.mod h1:xuIt+sRxDFrHS0drzXUlCJthkJ8k7lkkUojDSR247MQ=
-github.com/erlangs/hexya-base v1.0.0/go.mod h1:dXg/9ftbtRNL1bc6uRhqEW5DZ2ad1HY0lSIGA2Z9n5w=
-github.com/erlangs/hexya-base v1.0.1 h1:9Uxq6HR2TlUgY0qey6Xlh3NpvMJyVQzWOsG0xSOyXbE=
 github.com/erlangs/hexya-base v1.0.1/go.mod h1:dXg/9ftbtRNL1bc6uRhqEW5DZ2ad1HY0lSIGA2Z9n5w=
-github.com/erlangs/hexya-web v1.0.0 h1:kBnMAPIw4dvWDtthvd8DuRRaGvW9Clz+J2rQw7NJ9Ik=
-github.com/erlangs/hexya-web v1.0.0/go.mod h1:HzLSbMPDRKaVtEM10EWLgEHpCj1usJdVYP2V2lHEWpA=
+github.com/erlangs/hexya-base v1.0.2 h1:ReXqekpx8WuOTfclYx335Zd5MOKTwV7y5OsjxpH5VG8=
+github.com/erlangs/hexya-base v1.0.2/go.mod h1:dXg/9ftbtRNL1bc6uRhqEW5DZ2ad1HY0lSIGA2Z9n5w=
+github.com/erlangs/hexya-web v1.0.1 h1:ZqqB+xRaXKFwmUw0AMQs3FycbvHiH93RA1TS5OeedC0=
+github.com/erlangs/hexya-web v1.0.1/go.mod h1:5sFkmdgfkShXiaLYK34vcoBPiaAFP2UX0c9j89SDVDE=
 github.com/erlangs/okoo v1.0.2 h1:cKPM2nnFuFMJi20T2xSrYvjM699C0L/Djuzfx0T6gK0=
 github.com/erlangs/okoo v1.0.2/go.mod h1:t/NTu/Xmrsw2Ugw8xgswNsf6mckN6Ee0VpzliSzcwJg=
 github.com/flosch/pongo2 v0.0.0-20190707114632-bbf5a6c351f4 h1:GY1+t5Dr9OKADM64SYnQjw/w99HMYvQ0A8/JoUkxVmc=

@@ -8,14 +8,14 @@ LogStdout = true
 #DataDir = ""
 
 [DB]
-#Driver = "postgres"
-#Host = "/var/run/postgresql"
-#Port = 5432
-#User = ""
-#Password = ""
-#Name = "hexyaoth"
+Driver = "postgres"
+Host = "127.0.0.1"
+Port = 5432
+User = "postgres"
+Password = "postgres"
+Name = "hexyaoth"
 
 [Server]
 #Languages = ["fr"]
 #Interface = ""
-#Port = 8080
+Port = 8186

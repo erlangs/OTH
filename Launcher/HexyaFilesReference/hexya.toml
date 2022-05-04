@@ -16,6 +16,6 @@ Password = "postgres"
 Name = "hexyaoth"
 
 [Server]
-#Languages = ["fr"]
+Languages = ["en", "zh_CN"]
 #Interface = ""
 Port = 8186

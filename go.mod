@@ -5,7 +5,7 @@ go 1.12
 require (
 	github.com/davecgh/go-spew v1.1.1
 	github.com/erlangs/hexya-base v1.0.2
-	github.com/erlangs/hexya-web v1.0.1
+	github.com/erlangs/hexya-web v1.0.2
 	github.com/erlangs/okoo v1.0.2
 	github.com/erlangs/pool v1.0.0
 	github.com/golang-collections/collections v0.0.0-20130729185459-604e922904d3

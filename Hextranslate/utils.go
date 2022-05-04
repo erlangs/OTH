@@ -19,12 +19,13 @@ func FatalError(str string, args ...interface{}) {
 	for _, a := range args {
 		fmt.Println(a)
 	}
-	FtExit()
+	FtExit() // by kerry
 }
 
 func FtExit() {
 	fmt.Println("Exiting program...")
-	os.Exit(0)
+	panic(fmt.Errorf("Exiting program..."))
+	//os.Exit(0)
 }
 
 func PrintVersion() {

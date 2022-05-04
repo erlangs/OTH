@@ -35,8 +35,8 @@ github.com/disintegration/imaging v1.6.0/go.mod h1:xuIt+sRxDFrHS0drzXUlCJthkJ8k7
 github.com/erlangs/hexya-base v1.0.1/go.mod h1:dXg/9ftbtRNL1bc6uRhqEW5DZ2ad1HY0lSIGA2Z9n5w=
 github.com/erlangs/hexya-base v1.0.2 h1:ReXqekpx8WuOTfclYx335Zd5MOKTwV7y5OsjxpH5VG8=
 github.com/erlangs/hexya-base v1.0.2/go.mod h1:dXg/9ftbtRNL1bc6uRhqEW5DZ2ad1HY0lSIGA2Z9n5w=
-github.com/erlangs/hexya-web v1.0.1 h1:ZqqB+xRaXKFwmUw0AMQs3FycbvHiH93RA1TS5OeedC0=
-github.com/erlangs/hexya-web v1.0.1/go.mod h1:5sFkmdgfkShXiaLYK34vcoBPiaAFP2UX0c9j89SDVDE=
+github.com/erlangs/hexya-web v1.0.2 h1:Rsi/LRE9hQ/Pitz9gNwSnKOyMlAcw7kzv/Rey9B/LLA=
+github.com/erlangs/hexya-web v1.0.2/go.mod h1:5sFkmdgfkShXiaLYK34vcoBPiaAFP2UX0c9j89SDVDE=
 github.com/erlangs/okoo v1.0.2 h1:cKPM2nnFuFMJi20T2xSrYvjM699C0L/Djuzfx0T6gK0=
 github.com/erlangs/okoo v1.0.2/go.mod h1:t/NTu/Xmrsw2Ugw8xgswNsf6mckN6Ee0VpzliSzcwJg=
 github.com/flosch/pongo2 v0.0.0-20190707114632-bbf5a6c351f4 h1:GY1+t5Dr9OKADM64SYnQjw/w99HMYvQ0A8/JoUkxVmc=
@@ -96,9 +96,7 @@ github.com/grpc-ecosystem/go-grpc-prometheus v1.2.0/go.mod h1:8NvIoxWQoOIhqOTXgf
 github.com/grpc-ecosystem/grpc-gateway v1.9.0/go.mod h1:vNeuVxBJEsws4ogUvrchl83t/GYV9WGTSLVdBhOQFDY=
 github.com/hashicorp/hcl v1.0.0 h1:0Anlzjpi4vEasTeNFn2mLJgTSwt0+6sfsiTG8qcWGx4=
 github.com/hashicorp/hcl v1.0.0/go.mod h1:E5yfLk+7swimpb2L/Alb/PJmXilQ/rhwaUYs4T20WEQ=
-github.com/hexya-addons/base v0.1.6 h1:LH0sg4tQV7k8DtzPGipNjL9ao7hwuAJVV6BeH//so+Q=
 github.com/hexya-addons/base v0.1.6/go.mod h1:I0km7cjbNoD/z7zZZfNzqmhsF2Yba6IQ6JfGqXHOmmc=
-github.com/hexya-erp/hexya v0.1.6 h1:+x4E2F06kabD9P5ZIbrkjV65vycRkQEMzV8Pz9bA4e0=
 github.com/hexya-erp/hexya v0.1.6/go.mod h1:1Ug/5+buVhoRR+VFcFMCz2Tbj80EtQVqAuTQgqUGtTI=
 github.com/hexya-erp/pool v1.0.2/go.mod h1:DucbMZy2Dy4JSDgyYR8PIi8wgSmH1E6VV1dJE6WKRY8=
 github.com/inconshreveable/mousetrap v1.0.0 h1:Z8tu5sraLXCXIcARxBp/8cbvlwVa7Z1NHg9XEKhtSvM=
